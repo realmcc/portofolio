@@ -3,73 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - McCreal</title>
+    <title>McCreal's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header with Social Links -->
-    <header id="header">
-        <h1>McCreal's Portfolio</h1>
-        <nav class="social-links">
-            <a href="https://youtube.com/@mccreal" target="_blank">YouTube</a>
-            <a href="https://www.tiktok.com/@mccreal_" target="_blank">TikTok</a>
-            <a href="https://instagram.com/mccreal_" target="_blank">Instagram</a>
-        </nav>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome! I’m McCreal, a tech creator passionate about photography, custom keyboards, and tech setups.</p>
+    <!-- Hero Section with Full-Screen Background Image -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>McCreal</h1>
+            <div class="social-links">
+                <a href="https://youtube.com/@mccreal" target="_blank">
+                    <img src="icons/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.tiktok.com/@mccreal_" target="_blank">
+                    <img src="icons/tiktok-icon.png" alt="TikTok">
+                </a>
+                <a href="https://instagram.com/mccreal_" target="_blank">
+                    <img src="icons/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section with Animated Galleries -->
+    <!-- Projects Section with Expandable Categories -->
     <section id="projects">
         <h2>My Projects</h2>
-
-        <!-- Photography Gallery -->
-        <div class="gallery">
+        
+        <div class="project-category" onclick="toggleGallery('photography')">
+            <img src="assets/images/photography/sample.jpg" alt="Photography">
             <h3>Photography</h3>
             <div class="gallery-container" id="photography-gallery">
-                <!-- Images will go here -->
+                <!-- Images will load dynamically -->
             </div>
         </div>
 
-        <!-- Keyboards Gallery -->
-        <div class="gallery">
+        <div class="project-category" onclick="toggleGallery('keyboards')">
+            <img src="assets/images/keyboards/sample.jpg" alt="Keyboards">
             <h3>Keyboards</h3>
             <div class="gallery-container" id="keyboards-gallery">
-                <!-- Images will go here -->
+                <!-- Images will load dynamically -->
             </div>
         </div>
 
-        <!-- Setup Gallery -->
-        <div class="gallery">
+        <div class="project-category" onclick="toggleGallery('setup')">
+            <img src="assets/images/setup/sample.jpg" alt="Setup">
             <h3>Setup</h3>
             <div class="gallery-container" id="setup-gallery">
-                <!-- Images will go here -->
+                <!-- Images will load dynamically -->
             </div>
         </div>
 
-        <!-- Other Projects Gallery -->
-        <div class="gallery">
+        <div class="project-category" onclick="toggleGallery('other-projects')">
+            <img src="assets/images/other-projects/sample.jpg" alt="Other Projects">
             <h3>Other Projects</h3>
             <div class="gallery-container" id="other-projects-gallery">
-                <!-- Images will go here -->
+                <!-- Images will load dynamically -->
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
     <script src="script.js"></script>
